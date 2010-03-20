@@ -1,0 +1,15 @@
+<%= javascript_include_tag :defaults %>
+<h1>Editing disk</h1>
+
+<% form_for(@disk) do |f| %>
+  <%= f.error_messages %>
+
+  <%= render(:partial => 'disk_form', :object => f) %>
+  
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @disk %> |
+<%= link_to 'Back', disks_path %>

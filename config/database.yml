@@ -1,0 +1,23 @@
+development:
+  adapter: sqlserver
+  dsn: dvdripbot
+  mode: ODBC
+  username: hanh
+  password: airwolf
+  host: localhost
+
+test:
+  adapter: sqlserver
+  dsn: dvdripbot
+  mode: ODBC
+  username: hanh
+  password: airwolf
+  host: localhost
+
+production:
+  adapter: sqlserver
+  dsn: dvdripbot
+  mode: ODBC
+  username: hanh
+  password: airwolf
+  host: localhost

@@ -1,0 +1,32 @@
+<%= javascript_include_tag :defaults %>
+  <p>
+    <%= disk_form.label :image %><br />
+    <%= disk_form.text_field :image %>
+  </p>
+  <p>
+    <%= disk_form.label :name %><br />
+    <%= disk_form.text_field :name %>
+  </p>
+  <p>
+    <%= disk_form.label :is_movie %><br />
+    <%= disk_form.check_box :is_movie, :onclick => update_page { |page| 
+      page[:model_is_tvshow].toggle
+      }
+    %>
+  </p>
+
+  <span style="display:<%= disk_form.object[:is_movie] ? :none : :inline %>;" id="model_is_tvshow">  
+    <p>
+      <%= disk_form.label :season %><br />
+      <%= disk_form.text_field :season %>
+    </p>
+    <p>
+      <%= disk_form.label :first_episode %><br />
+      <%= disk_form.text_field :first_episode %>
+    </p>
+    <p>
+      <%= disk_form.label :first_title %><br />
+      <%= disk_form.text_field :first_title %>
+    </p>
+  </span>  
+

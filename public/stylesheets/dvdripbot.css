@@ -1,0 +1,9 @@
+.list-line-odd {
+  padding: 2px;
+  background-color: LightPink;
+}
+
+.list-line-even {
+  padding: 2px;
+  background-color: LightCyan;
+}

@@ -1,0 +1,31 @@
+<h1>Listing disks</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Season</th>
+    <th>First episode</th>
+    <th>First title</th>
+  </tr>
+
+<% @disks.each do |disk| %>
+  <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+    <td width="400" class="disk-description">
+      <dl>
+        <dt><%=h disk.image %></dt>
+        <dt><%=h disk.name %></dt>
+      </dl>
+    </td>
+    <td><%=h disk.season %></td>
+    <td><%=h disk.first_episode %></td>
+    <td><%=h disk.first_title %></td>
+    <td><%= link_to 'Show', disk %></td>
+    <td><%= link_to 'Edit', edit_disk_path(disk) %></td>
+    <td><%= link_to 'Destroy', disk, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New disk', new_disk_path %>

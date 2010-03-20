@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  image: MyString
+  name: MyString
+  is_movie: false
+  season: 1
+  first_episode: 1
+  first_title: 1
+
+two:
+  image: MyString
+  name: MyString
+  is_movie: false
+  season: 1
+  first_episode: 1
+  first_title: 1

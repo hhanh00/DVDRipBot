@@ -1,0 +1,33 @@
+<p>
+  <b>Image:</b>
+  <%=h @disk.image %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @disk.name %>
+</p>
+
+<p>
+  <b>Is movie:</b>
+  <%=h @disk.is_movie %>
+</p>
+
+<p>
+  <b>Season:</b>
+  <%=h @disk.season %>
+</p>
+
+<p>
+  <b>First episode:</b>
+  <%=h @disk.first_episode %>
+</p>
+
+<p>
+  <b>First title:</b>
+  <%=h @disk.first_title %>
+</p>
+
+
+<%= link_to 'Edit', edit_disk_path(@disk) %> |
+<%= link_to 'Back', disks_path %>
